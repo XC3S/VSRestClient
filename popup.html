@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Set Page Color Popup</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div class="row mar-bot-1">
+      <div class="w33 float-l">
+        <input type="radio" name="method" value="get" id="mge" checked tabindex="10"><label for="mge">GET</label>
+      </div>
+      <div class="w33 float-l">
+        <input type="radio" name="method" value="post" id="mpo" tabindex="20"><label for="mpo">POST</label>
+      </div>
+      <div class="w33 float-l">
+        <input type="radio" name="method" value="put" id="mpu" tabindex="30"><label for="mpu">PUT</label>
+      </div>
+    </div>
+    <div class="mar-bot-1">
+      <label>URL</label>
+      <input type="text" id="url" class="w100" value="https://localhost:446/INTERSHOP/rest/WFS/VISUSTORE-DE-Site/-/visustore/api/v1/customers/955881/settings/favorites" tabindex="40">
+    </div>
+    <div class="mar-bot-1">
+      <input id="cb-sync" type="checkbox" disabled><label for="cb-sync">Synchronized Authentication</label>
+    </div>
+    <div class="row mar-bot-1">
+      <div class="w50 float-l header-keys">
+          <label>Headers</label>
+          <input type="text" id="header-key-1" class="w100" tabindex="100">
+      </div>
+      <div class="w50 float-l header-values">
+          <label>Values</label>
+          <input type="text" id="header-value-1" class="w100" tabindex="110">
+      </div>
+      <button id="addHeader" class="w100">Add New Header</button>
+    </div>
+    <div class="mar-bot-1">
+      <input type="checkbox" id="cb-inject" tabindex="50000"><label for="cb-inject">Inject Authentication Header</label>        
+    </div>
+    <div class="row mar-bot-05">
+      <label>Request Body</label>
+      <textarea rows="4" id="requestBody" class="w100" tabindex="50500"></textarea>
+    </div>
+    <div>
+      <button id="send" tabindex="51000" class="w100">Send Request</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "VSRestClient",
+  "description": "REST debugging tool for Visustore",
+  "version": "0.1",
+  "permissions": [
+    "tabs", 
+    "storage",
+    "http://*/*", 
+    "https://*/*",
+    "<all_urls>",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://localhost:446/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "Set this page's color.",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}

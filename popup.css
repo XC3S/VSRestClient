@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'FrutigerNextW02Light';
+    src: url('FrutigerNextW02Light.woff') format('woff'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  width: 512px;
+  padding: 1.5rem;
+}
+
+body, input, button, label, textarea {
+  font-family: 'FrutigerNextW02Light', sans-serif;
+  font-size: 1em;
+}
+
+.mar-bot-1 {
+  margin-bottom: 1rem;
+}
+
+.mar-bot-05 {
+  margin-bottom: 0.5rem;
+}
+
+.row {
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
+.w100 {
+  width: 100%;  
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w33 {
+  width: 33.33%;
+}
+
+.float-l {
+  float: left;
+}
+
+input[type=checkbox]:disabled + label {
+  color: #ccc;
+}
+
+button {
+  cursor: pointer;
+  line-height: 2.5em;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background: linear-gradient(#fff, #ebe9e7);
+  border: 1px solid #a6adb2;
+  border-radius: 8px;
+}
+
+button:hover, button:active, button:focus {
+  color: #459adb;
+  background: linear-gradient(#fff, #f7f7f7);
+}
+
+input[type=text]{
+  border: 1px solid #777b80;
+  line-height: 1.8em !important;
+  height: 2.5em !important;
+  color: #000;
+  text-decoration: none;
+  padding-left: 0.5em;
+}
+
+textarea {
+  border: 1px solid #777b80;
+  padding-left: 0.5em;
+  color: #000;
+}
+
+.header-keys {
+  padding-right: 0.25rem;
+}
+
+.header-values {
+  padding-left: 0.25rem;
+}
+
+.header-keys > input,
+.header-values > input {
+  margin-bottom: 0.5em;
+}
+
+input[type=checkbox], input[type=radio] {
+  margin-right: 0.5rem;
+  margin-left: 0rem;
+  margin-top: 0px;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+input[type=checkbox] + label, input[type=radio] + label {
+  position: relative;
+  top: -0.25rem;
+}
+
+* {
+  box-sizing:border-box;
+}
